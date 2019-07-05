@@ -1,0 +1,11 @@
+#bigContainer {
+  border: solid 1px black;
+}
+
+.title {
+  text-align: center;
+}
+
+.full {
+  width: 100%;
+}

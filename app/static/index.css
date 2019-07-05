@@ -1,0 +1,25 @@
+#bigContainer {
+  background: #eeeeee;
+}
+
+.generated-div {
+  border: solid 1px black;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+.generate-div:hover {
+  background-color: #fafafa;
+}
+
+.announcement {
+  background: #ffffff;
+}
+
+.title {
+  text-align: center;
+}
+
+.full {
+  width: 100%;
+}
