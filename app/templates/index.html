@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Announcements</title>
+    </head>
+    <body>
+      <h1>Here are all the announcements!</h1>
+      <a href = "/newannouncement">Click here to add an announcement.</a>
+      <div class="event-list">
+        <ul>
+          {% for announcement in allAnnouncements %}
+            <li>{{ announcement.submitter }} - {{ announcement.submitter }}</li>
+          {% endfor %}
+        </ul>        
+      </div>
+    </body>
+</html>
+
+
+<!--
+
+-->

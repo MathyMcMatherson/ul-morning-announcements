@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Announcement Submission</title>
+    </head>
+    <body>
+        <h1>Fill in the fields to add an announcement!</h1>
+        <!-- Submitter
+        Club or group
+        start date
+        end date
+        announcement itself
+        submit button-->
+        
+        <form method="post" action="/confirmation">
+            <input type="text" placeholder="Submitter Name" name="submitterName" />
+            <input type="text" placeholder="Club / Group Name" name="clubOrGroup" />
+            <input type="text" placeholder="Start Date" name="startDate" />
+            <input type="text" placeholder="End Date" name="endDate" />
+            <input type="textarea" placeholder="My Announcement" name="myAnnouncement" />
+            <input type="submit" value="Submit">
+        
+        </form>
+        <a href = "/confirmation">Click here for confirmation page.</a>
+    </body>
+</html>
