@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="static/style.css" />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- icons css -->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+  </head>  
+  <body>
+    
+    <form method="post" action="/confirmation">
+        <div class="container" id="bigContainer">
+          <div class="row">
+            <div class="col s12">
+              <h1 class="title">
+                Announcements
+              </h1>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Your Name" id="name" name="submitterName" type="text">
+              <label for="name">Your Name</label>
+            </div>
+            <div class="input-field col s6">
+              <!-- <i class="material-icons prefix modal-trigger" href="#modal1" id="addIcon">add</i> -->
+              <input placeholder="Your Club / Class / Category" id="group" name="clubOrGroup" type="text">
+              <label for="group">Your Club / Class / Category</label>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="announcement" name="myAnnouncement" class="materialize-textarea"></textarea>
+              <label for="announcement">Announcement</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input type="text" id="startDate" name="startDate" placeholder="Start Date" class="datepicker">
+              <label for="startDate">Start Date</label>
+            </div>
+            <div class="input-field col s6">
+              <input type="text" id="endDate" name="endDate" placeholder="End Date" class="datepicker">
+              <label for="endDate">End Date</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s6">
+              <input type="submit" class="waves-effect waves-light btn-large full" value="Submit"></input>
+            </div>
+            <div class="col s6">
+              <a class="waves-effect waves-light btn-large full">Clear</a>
+            </div>  
+          </div>
+        </div>
+    </form>
+  
+    
+    
+  
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <h4>Categories That Already Exist</h4>
+      <ul class="collection" id="categoryUl">
+        
+      </ul>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+
+    <script type="text/javascript" src="static/addAnnounce.js"></script>
+    
+  </body>
+</html>
